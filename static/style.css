@@ -1,0 +1,78 @@
+body {
+	font-family: Century Gothic;
+	background-image: url(https://www.publiink.com/wp-content/uploads/2016/05/fondo-formulario-fullpage.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	padding: 1em 0em;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
+h1 {
+	font-weight: bolder;
+	text-shadow: 7px 4px 4px #FF7F00;
+	font-size: 350%;
+	display: inline-block;
+	position: relative;
+	color: #000000;
+}
+
+h1::after,h1::before{
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 4px;
+	background-color: currentColor;
+	top: 0.6em;
+	transform: scale(0);
+	transition: all 0.2s ease-in;
+}
+
+h1:hover::before, h1:hover::after {
+	transform: scale(1);
+}
+
+h1::before {
+	left: -160px;
+}
+
+h1::after {
+	right: -165px;
+}
+
+form{
+	text-align: left;
+}
+
+.registro{
+	width: 90%;
+	max-width: 500px;
+	background: #FFFF00;
+	padding: 40px;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 4px;
+
+}
+
+.enviado{
+	text-align: center;
+	width: 90%;
+	max-width: 500px;
+	background: #FF7F00;
+	padding: 50px;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 4px;
+
+}
+
+.pad {
+	padding: 5em 5em;
+}
+
+.boton {
+	width: 100px;
+	
+}
